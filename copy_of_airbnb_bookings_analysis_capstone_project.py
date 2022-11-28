@@ -124,4 +124,19 @@ plt.show()
 
 # **Busiest Hosts**
 """
+#Lets findout the busiest host from the data
 
+busiest_host = airbnb_non_null_df.groupby(['host_name','neighbourhood_group'])['minimum_nights'].count().reset_index()
+top_5_busiest_host = busiest_host.sort_values(by='minimum_nights',ascending=False).head()
+top_5_busiest_host
+
+name = top_5_busiest_host['host_name']
+stayed = top_5_busiest_host['minimum_nights']
+
+fig = plt.figure(figsize=(12,6))
+plt.bar(name, stayed, color='red',width=0.5)
+
+plt.xlabel = ('Host Name')
+plt.ylabel = ('Minimum Nights')
+plt.title = ('Top 5 Busiest Host')
+plt.show()
