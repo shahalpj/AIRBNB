@@ -147,3 +147,4 @@ plt.show()
 #lets checkout various type of rooms in various neighbourhood group.
 
 various_rooms = airbnb_non_null_df.groupby(['neighbourhood_group','room_type'])['minimum_nights'].count().reset_index()
+various_rooms.sort_values(by='minimum_nights',ascending=False)
