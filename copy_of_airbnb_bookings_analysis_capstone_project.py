@@ -140,3 +140,10 @@ plt.xlabel = ('Host Name')
 plt.ylabel = ('Minimum Nights')
 plt.title = ('Top 5 Busiest Host')
 plt.show()
+
+"""## **Sonder (NYC) is the most busiest host (207).Michael(176) and David(149) is in 2nd and 3rd position.**
+
+# ***Traffic among different areas.***
+#lets checkout various type of rooms in various neighbourhood group.
+
+various_rooms = airbnb_non_null_df.groupby(['neighbourhood_group','room_type'])['minimum_nights'].count().reset_index()
