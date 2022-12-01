@@ -148,3 +148,10 @@ plt.show()
 
 various_rooms = airbnb_non_null_df.groupby(['neighbourhood_group','room_type'])['minimum_nights'].count().reset_index()
 various_rooms.sort_values(by='minimum_nights',ascending=False)
+
+name = various_rooms['room_type']
+stayed = various_rooms['minimum_nights']
+
+fig = plt.figure(figsize=(14,6))
+plt.bar(name, stayed, color='green',width=0.5)
+plt.show()
