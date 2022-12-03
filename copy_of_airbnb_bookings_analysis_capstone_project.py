@@ -155,3 +155,6 @@ stayed = various_rooms['minimum_nights']
 fig = plt.figure(figsize=(14,6))
 plt.bar(name, stayed, color='green',width=0.5)
 plt.show()
+
+## In here we can see that most no.of peoples stayed in **Entire home/apt** and **private room**. Least no.of people prefers **shared room**. So the places having **entire home/apt or private room** is the high traffic area.
+
