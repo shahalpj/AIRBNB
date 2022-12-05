@@ -159,3 +159,4 @@ plt.show()
 ## In here we can see that most no.of peoples stayed in **Entire home/apt** and **private room**. Least no.of people prefers **shared room**. So the places having **entire home/apt or private room** is the high traffic area.
 
 ## **Average price among various groups.**
+avrg_price = airbnb_non_null_df.groupby(['neighbourhood_group'])['price'].mean()
