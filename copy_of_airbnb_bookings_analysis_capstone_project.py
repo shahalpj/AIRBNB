@@ -160,3 +160,4 @@ plt.show()
 
 ## **Average price among various groups.**
 avrg_price = airbnb_non_null_df.groupby(['neighbourhood_group'])['price'].mean()
+avrg_price.sort_values(ascending=False)
