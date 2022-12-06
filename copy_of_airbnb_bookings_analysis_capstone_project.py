@@ -163,3 +163,4 @@ avrg_price = airbnb_non_null_df.groupby(['neighbourhood_group'])['price'].mean()
 avrg_price.sort_values(ascending=False)
 
 avrg_price.plot(kind='bar')
+plt.rcParams['figure.figsize'] = (16, 8)
