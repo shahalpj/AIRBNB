@@ -164,3 +164,4 @@ avrg_price.sort_values(ascending=False)
 
 avrg_price.plot(kind='bar')
 plt.rcParams['figure.figsize'] = (16, 8)
+plt.show()
