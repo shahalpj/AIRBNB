@@ -165,3 +165,5 @@ avrg_price.sort_values(ascending=False)
 avrg_price.plot(kind='bar')
 plt.rcParams['figure.figsize'] = (16, 8)
 plt.show()
+
+Group **Manhattan** has the highest average price among the total groups**(180.071596).** **Brooklyn** has second highest average price**(121.463289)**.**Bronx** is the least average price group having **79.558857**.
