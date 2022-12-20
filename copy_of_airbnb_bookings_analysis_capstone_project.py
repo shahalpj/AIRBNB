@@ -110,7 +110,7 @@ price1
 
 """## The **Luxury 1 bedroom apt. -stunning Manhattan views** and **Furnished room in Astoria apartment** are the most costed hotel (**10000**)"""
 
-fig, ax = plt.subplots(figsize=(18, 8))
+fig, ax = plt.subplots(figsize=(16, 8))
 ax.scatter(x = reviews['price'], y = reviews['number_of_reviews'])
 plt.xlabel("price",fontsize=24)
 plt.ylabel("reviews",fontsize=24)
