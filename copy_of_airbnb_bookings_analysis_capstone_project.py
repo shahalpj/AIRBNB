@@ -6,7 +6,7 @@ from google.colab import drive
 drive.mount('/content/drive/')
 
 # Commented out IPython magic to ensure Python compatibility.
-#let's import the libraries
+#let's import the libraries.
 
 import numpy as np
 import pandas as pd
