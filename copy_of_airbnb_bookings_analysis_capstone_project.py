@@ -43,7 +43,7 @@ airbnb_non_null_df.columns
 
 """# ***Lets explore the hosts and areas***"""
 
-#lets groupby the hosts and areas
+#lets groupby the hosts and areas.
 
 host_and_areas = airbnb_non_null_df.groupby(['host_name','neighbourhood_group','neighbourhood'])['calculated_host_listings_count'].count().reset_index()
 
