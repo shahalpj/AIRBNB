@@ -19,7 +19,7 @@ airbnb_df = pd.read_csv(file_path)
 
 airbnb_df.shape
 
-#have a look on the columns
+#have a look on the columns.
 airbnb_df.columns
 
 airbnb_df.head()
