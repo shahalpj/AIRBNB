@@ -35,7 +35,7 @@ airbnb_non_null_df.info()
 
 airbnb_non_null_df.describe()
 
-#Take the necessary columns only
+#Take the necessary columns only.
 
 airbnb_non_null_df = airbnb_non_null_df[['id','name','host_id','host_name','neighbourhood_group','neighbourhood','room_type','price','minimum_nights','number_of_reviews','last_review','reviews_per_month','calculated_host_listings_count','availability_365']]
 
